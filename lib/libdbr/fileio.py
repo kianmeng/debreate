@@ -30,7 +30,7 @@ from zipfile import ZipFile
 from . import paths
 
 
-# line ending delimeter
+# line ending delimiter
 __le = "\n"
 
 # default file & directory permissions
@@ -280,7 +280,7 @@ def makeDir(dirpath, mode=__perm["d"], verbose=False):
     return err, msg
   os.makedirs(dirpath)
   if not os.path.isdir(dirpath):
-    return 1, "failed to create directory, an unknown error occured: {}".format(dirpath)
+    return 1, "failed to create directory, an unknown error occurred: {}".format(dirpath)
   os.chmod(dirpath, mode)
   if verbose:
     print("new directory '{}' (mode={})".format(dirpath, oct(mode)[2:]))
@@ -300,7 +300,7 @@ def deleteFile(filepath, verbose=False):
       return errno.EISDIR, "cannot delete file, directory exists: {}".format(filepath)
     os.remove(filepath)
     if os.path.lexists(filepath):
-      return 1, "failed to delete file, an unknown error occured: {}".format(filepath)
+      return 1, "failed to delete file, an unknown error occurred: {}".format(filepath)
     if verbose:
       print("delete file '{}'".format(filepath))
   return 0, None

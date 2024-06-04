@@ -8,4 +8,4 @@
 
 ## Wizard pages related to binary package building.
 #
-#  @pacakge wizbin
+#  @package wizbin

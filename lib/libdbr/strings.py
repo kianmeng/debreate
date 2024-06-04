@@ -287,7 +287,7 @@ def isInteger(st):
     return False
   return True
 
-## Checks if a string represents a numberic value.
+## Checks if a string represents a numeric value.
 #
 #  @param st
 #    String or bytes object to check.

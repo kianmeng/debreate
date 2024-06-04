@@ -74,7 +74,7 @@ class Config:
           return False
     return True
 
-  ## Parses config file data into a managable list.
+  ## Parses config file data into a manageable list.
   #
   #  @return
   #    List of file contents.
@@ -230,7 +230,7 @@ class Config:
     conf.insert(insert_idx, Pair(key, strings.toString(value, sep=sep)))
     self.__sections[section] = conf
 
-  ## Retreives a string value from config.
+  ## Retrieves a string value from config.
   #
   #  @param key
   #    String identifier.
@@ -264,7 +264,7 @@ class Config:
       raise KeyError("key '{}' not found in config {} and 'default' not set".format(key, suffix))
     return default
 
-  ## Retreives a boolean value from config.
+  ## Retrieves a boolean value from config.
   #
   #  @param key
   #    String identifier.
@@ -277,7 +277,7 @@ class Config:
   def getBool(self, key, default=None, section=None):
     return strings.boolFromString(self.getValue(key, default, section))
 
-  ## Retreives an integer value from config.
+  ## Retrieves an integer value from config.
   #
   #  @param key
   #    String identifier.
@@ -294,7 +294,7 @@ class Config:
       return value
     return int(value)
 
-  ## Retreives a float value from config.
+  ## Retrieves a float value from config.
   #
   #  @param key
   #    String identifier.
@@ -307,7 +307,7 @@ class Config:
   def getFloat(self, key, default=None, section=None):
     return strings.floatFromString(self.getValue(key, default, section))
 
-  ## Retreives a list value from config.
+  ## Retrieves a list value from config.
   #
   #  @param key
   #    String identifier.
@@ -324,7 +324,7 @@ class Config:
   def getList(self, key, default=None, section=None, sep=",", handler=str):
     return strings.listFromString(self.getValue(key, default, section), sep, handler)
 
-  ## Retreives a key-value pair value from config.
+  ## Retrieves a key-value pair value from config.
   #
   #  @param key
   #    String identifier.
@@ -513,7 +513,7 @@ def clearDefaults():
   for key in __config_defaults:
     del __config_defaults[key]
 
-## Parses config file data into a managable list.
+## Parses config file data into a manageable list.
 #
 #  @return
 #    List of file contents.

@@ -26,7 +26,7 @@ __dbr_standard = (1, 0)
 def getVersion():
   return __version
 
-## Retreives app development version.
+## Retrieves app development version.
 #
 #  @return
 #    Development version integer.

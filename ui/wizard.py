@@ -323,7 +323,7 @@ class Wizard(wx.Panel):
       page_ids.append(P.GetId())
     return tuple(page_ids)
 
-  ## Alias of `ui.wizard.Wizard.getPagesIdList` for backword compatibility.
+  ## Alias of `ui.wizard.Wizard.getPagesIdList` for backward compatibility.
   #
   #  @deprecated
   #    Use `ui.wizard.Wizard.getPagesIdList`.

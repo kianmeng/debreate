@@ -41,7 +41,7 @@ def runTest(test_name, test_file=None, verbose=False):
     # FIXME: correct error code?
     return 1, msg
   if "init" not in test_data.__dict__:
-    msg = "'{}' does not define funtion 'init', cannot run test".format(test_name)
+    msg = "'{}' does not define function 'init', cannot run test".format(test_name)
     __logger.error(msg)
     # FIXME: correct error code?
     return 1, msg

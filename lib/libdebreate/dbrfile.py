@@ -42,7 +42,7 @@ class DBRFile:
     self.project_data = {}
     self.setFile(filepath)
 
-    # detectected standard & app versions from project file
+    # detected standard & app versions from project file
     self.dbr_standard = None
     self.app_version = None
 

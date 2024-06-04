@@ -18,7 +18,7 @@ import sys
 from . import paths
 
 
-## Creates a uniform agument list.
+## Creates a uniform argument list.
 #
 #  @param args
 #    List of arguments.

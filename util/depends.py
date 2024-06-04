@@ -50,4 +50,4 @@ def checkWx():
     sys.exit(1)
   if wx_ver < wx_rec:
     tmp = ".".join(str(wx_rec).strip("[]").split(", "))
-    logger.warn("minimum recommened version of wxPython is {}, but found {}, app may not function as intended".format(tmp, wx.__version__))
+    logger.warn("minimum recommended version of wxPython is {}, but found {}, app may not function as intended".format(tmp, wx.__version__))

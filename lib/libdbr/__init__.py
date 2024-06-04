@@ -18,7 +18,7 @@ __version_dev = 0
 def version():
   return __version
 
-## Retreives version information as a string.
+## Retrieves version information as a string.
 def versionString():
   ver = strings.toString(__version, sep=".")
   if __version_dev > 0:
